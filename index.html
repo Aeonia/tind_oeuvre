@@ -18,20 +18,18 @@
         Tind'oeuvre
       </a>
     </nav>
-    <div class="container" id="js">
-      <div class="main">
-        <div class="col-sm">
-            <p>Au cours d'un projet scientifique top secret nous avons développé une formule qui vous permettra de connaitre l'oeuvre avec laquelle vous avez le plus grand pourcentage de compatibilité.
-            <p>Entrez votre prénom et cliquez sur le boutton pour découvrir votre résultat !</p>
-            </p>
-            <form>
-                <input type="text" name="name" id="nom"/><br /><br />
-            </form>
-            <div id="mon_oeuvre">
-              <button onclick="oeuvres()" type="button" class="btn btn-success" id="oeuvre">Résultat</button>
-            </div>
+    <div class="container-fluid" id="js">
+      <div class="main" id="question">
+        <p>Au cours d'un projet scientifique top secret nous avons développé une formule qui vous permettra de connaitre l'oeuvre avec laquelle vous avez le plus grand pourcentage de compatibilité.
+        <p>Entrez votre prénom et cliquez sur le boutton pour découvrir votre résultat !</p>
+        </p>
+        <form name="myForm" onsubmit="return validateForm()">
+            <input type="text" name="fname" id="nom">
+        </form>
+      </div>  
+        <div id="mon_oeuvre">
+          <input type="submit" value="Envoyer" onclick="oeuvres()" type="button" class="btn btn-success" id="oeuvre">
         </div>
-      </div>
     </div>
 
 
