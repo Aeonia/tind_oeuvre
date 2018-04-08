@@ -1,0 +1,55 @@
+
+
+   /* font-family: 'Nunito', sans-serif;
+
+    font-family: 'Berkshire Swash', cursive;
+
+    font-family: 'Shrikhand', cursive;
+
+    font-family: 'Archivo Black', sans-serif;*/
+
+
+
+body {
+    background: url('../img/topography.png');
+    font-family: fa5-proxima-nova;
+}
+
+#mon_oeuvre {
+    border-style: double;
+    border-radius: 1em;
+    border-color: black;
+    text-align: center;
+}
+
+#js {
+    margin-top : 10%;
+    margin-bottom: 25%;
+}
+
+#banner {
+    background-color: aquamarine;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#brand {
+
+    margin: none;
+    font-size: 2em;
+    font-family: 'Berkshire Swash', cursive;
+
+}
+
+
+
+   /* font-family: 'Nunito', sans-serif;
+
+    font-family: 'Berkshire Swash', cursive;
+
+    font-family: 'Shrikhand', cursive;
+
+    font-family: 'Archivo Black', sans-serif;
+    
+    font-family: 'Abril Fatface', cursive;*/
