@@ -16,15 +16,15 @@ body {
 }
 
 #mon_oeuvre {
-    border-style: double;
-    border-radius: 1em;
-    border-color: black;
     text-align: center;
 }
 
 #js {
-    margin-top : 10%;
+    margin-top : 7%;
     margin-bottom: 25%;
+    margin-right: auto;
+    margin-left: auto; 
+    width: 60%;
 }
 
 #banner {
