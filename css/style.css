@@ -12,7 +12,12 @@
 
 body {
     background: url('../img/topography.png');
-    font-family: fa5-proxima-nova;
+    font-family: 'Nunito', sans-serif;
+}
+
+.topper {
+    margin-bottom: 4%;
+    background-color: rgb(6, 27, 46)
 }
 
 #mon_oeuvre {
@@ -20,26 +25,48 @@ body {
 }
 
 #js {
-    margin-top : 7%;
     margin-bottom: 25%;
     margin-right: auto;
     margin-left: auto; 
     width: 60%;
 }
 
-#banner {
-    background-color: aquamarine;
-    text-align: center;
-    width: 100%;
-    
-}
 
 #brand {
 
     margin: none;
     font-size: 2em;
     font-family: 'Berkshire Swash', cursive;
+    color: white;
 
+}
+
+#resultat {
+
+    border-color: rgba(141, 133, 133, 0.685);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2%;
+    padding: 5%;
+    background-color: rgba(244, 246, 247, 0.5);
+    height: auto;
+    width: 70 vh;
+    color: rgb(49, 47, 43);
+    box-shadow: 4px 4px 8px #555;
+      
+
+}
+
+#anounce {
+
+    font-weight: bold;
+}
+
+#about {
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 

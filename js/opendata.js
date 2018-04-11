@@ -1,5 +1,7 @@
+$("#resultat").hide();
+$("#anounce").hide();
 
-  
+$(document).ready(function() {
 
 function ajaxGet(url, callback) {
 
@@ -44,6 +46,7 @@ req.send(null);
 
 
 $("#oeuvre").one("click", function oeuvres() {
+        
 
             var nom = document.getElementById("nom").value;
 
@@ -56,7 +59,7 @@ $("#oeuvre").one("click", function oeuvres() {
             var percent = document.createElement("P");                       // Create a <p> element
             var name = document.createTextNode(nom+", vous et votre oeuvre êtes compatibles à : "+number+"%");      // Create a text node
             percent.appendChild(name);                                          // Append the text to <p>
-            document.getElementById("mon_oeuvre").appendChild(percent); 
+            document.getElementById("anounce").appendChild(percent); 
 
 
             var min = 0;
@@ -81,32 +84,36 @@ $("#oeuvre").one("click", function oeuvres() {
                 // var oeuvreElt = document.getElementById("oeuvre");
                 // oeuvreElt.appendChild(conditionsElt);
                 // console.log(oeuvres);
-                var im = document.createElement("IMG");  
-                im.setAttribute("src", url);
-                im.setAttribute("width", "304");
-                im.setAttribute("height", "228");
-                im.setAttribute("alt", legende); 
-                document.getElementById("mon_oeuvre").appendChild(im);                  // Create a <p> element     // Create a text node                                        // Append the text to <p>
-                //document.getElementById("mon_oeuvre").appendChild(image); 
 
                 var para = document.createElement("P");                       // Create a <p> element
-                var t = document.createTextNode(legende);      // Create a text node
+                var t = document.createTextNode(legende+", "+date+", "+technique);      // Create a text node
                 para.appendChild(t);                                          // Append the text to <p>
-                document.getElementById("mon_oeuvre").appendChild(para);           // Append <p> to <div> with id="myDIV" 
+                document.getElementById("resultat").appendChild(para);           // Append <p> to <div> with id="myDIV" 
 
-                var para1 = document.createElement("P");                       // Create a <p> element
+                /*var para1 = document.createElement("P");                       // Create a <p> element
                 var t1 = document.createTextNode(date);      // Create a text node
                 para1.appendChild(t1);                                          // Append the text to <p>
-                document.getElementById("mon_oeuvre").appendChild(para1);           // Append <p> to <div> with id="myDIV" 
+                document.getElementById("resultat").appendChild(para1);           // Append <p> to <div> with id="myDIV" 
 
                 var para2 = document.createElement("P");                       // Create a <p> element
                 var t2 = document.createTextNode(technique);      // Create a text node
                 para2.appendChild(t2);                                          // Append the text to <p>
-                document.getElementById("mon_oeuvre").appendChild(para2);           // Append <p> to <div> with id="myDIV" 
+                document.getElementById("resultat").appendChild(para2); */ 
+
+                // Append <p> to <div> with id="myDIV" 
+                var im = document.createElement("IMG");  
+                im.setAttribute("src", url);
+                im.setAttribute("width", "70%");
+                im.setAttribute("height", "auto");
+                im.setAttribute("alt", legende); 
+                document.getElementById("resultat").appendChild(im);                  // Create a <p> element     // Create a text node                                        // Append the text to <p>
+                //document.getElementById("resultat").appendChild(image); 
 
                 $("#oeuvre").hide();
                 //document.getElementById("oeuvre").innerHTML = technique;
                 $("#question").hide();
+                $("#anounce").show();
+                $("#resultat").show();
                 
                 });
 
@@ -114,4 +121,4 @@ $("#oeuvre").one("click", function oeuvres() {
 
 });
 
-
+} );

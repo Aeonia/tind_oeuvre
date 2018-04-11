@@ -3,39 +3,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Archivo+Black|Berkshire+Swash|Nunito|Shrikhand" rel="stylesheet"> 
-    <title>Register/Login</title>
+    <title>Tind'oeuvre</title>
   </head>
 
   <body>
-  <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#" id="brand">
+  <nav class="navbar navbar-dark topper">
+      <a class="navbar-brand" href="index.html" id="brand">
           <i class="far fa-heart"></i>
         Tind'oeuvre
+      </a>
+      <a class="navbar-brand" href="about.html" id="about">
+      About
       </a>
     </nav>
     <div class="container-fluid" id="js">
       <div class="main" id="question">
         <p>Au cours d'un projet scientifique top secret nous avons développé une formule qui vous permettra de connaitre l'oeuvre avec laquelle vous avez le plus grand pourcentage de compatibilité.
-        <p>Entrez votre prénom et cliquez sur le boutton pour découvrir votre résultat !</p>
+        <p>Entrez votre prénom et cliquez sur le bouton pour découvrir votre résultat !</p>
         </p>
         <form name="myForm" onsubmit="return validateForm()">
             <input type="text" name="fname" id="nom">
         </form>
       </div>  
         <div id="mon_oeuvre">
+          <div id="anounce"></div>
           <button type="button" onclick="oeuvres()" class="btn btn-success" id="oeuvre">Envoyer</button>
+          <div class="animated swing" id="resultat"></div>
         </div>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/opendata.js"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>    
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>  
+    <script src="js/opendata.js"></script>  
  </body>   
  </html> 
 
