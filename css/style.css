@@ -13,6 +13,7 @@
 body {
     background: url('../img/topography.png');
     font-family: 'Nunito', sans-serif;
+    
 }
 
 .topper {
@@ -25,10 +26,10 @@ body {
 }
 
 #js {
-    margin-bottom: 25%;
+    /*margin-bottom: 25%;*/
     margin-right: auto;
     margin-left: auto; 
-    width: 60%;
+    width: 60vw;
 }
 
 
@@ -50,15 +51,16 @@ body {
     padding: 5%;
     background-color: rgba(244, 246, 247, 0.5);
     height: auto;
-    width: 70 vh;
+    width: auto;
     color: rgb(49, 47, 43);
     box-shadow: 4px 4px 8px #555;
+    margin: auto;
       
 
 }
 
 #anounce {
-
+    margin-top: -3%;
     font-weight: bold;
 }
 
@@ -69,8 +71,32 @@ body {
     font-weight: bold;
 }
 
+#about-text {
 
+    border-color: rgba(141, 133, 133, 0.685);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2%;
+    padding: 5%;
+    background-color: rgba(244, 246, 247, 0.5);
+    height: auto;
+    width: 70vw; 
+    color: rgb(49, 47, 43);
+    box-shadow: 4px 4px 8px #555;
 
+}
+
+.back {
+
+    margin-bottom: 3%;
+    margin-top: 0%;
+    background-color: rgb(6, 27, 46);
+    color: white;
+}
+
+.back:hover {
+    color: white;
+}
    /* font-family: 'Nunito', sans-serif;
 
     font-family: 'Berkshire Swash', cursive;

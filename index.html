@@ -26,13 +26,13 @@
         <p>Au cours d'un projet scientifique top secret nous avons développé une formule qui vous permettra de connaitre l'oeuvre avec laquelle vous avez le plus grand pourcentage de compatibilité.
         <p>Entrez votre prénom et cliquez sur le bouton pour découvrir votre résultat !</p>
         </p>
-        <form name="myForm" onsubmit="return validateForm()">
+        <form name="myForm" onsubmit="return validateForm()" method="POST">
             <input type="text" name="fname" id="nom">
         </form>
       </div>  
         <div id="mon_oeuvre">
           <div id="anounce"></div>
-          <button type="button" onclick="oeuvres()" class="btn btn-success" id="oeuvre">Envoyer</button>
+          <button type="button" onclick="oeuvres()" class="btn back" id="oeuvre">Envoyer</button>
           <div class="animated swing" id="resultat"></div>
         </div>
     </div>

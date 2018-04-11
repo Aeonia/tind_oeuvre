@@ -46,20 +46,30 @@ req.send(null);
 
 
 $("#oeuvre").one("click", function oeuvres() {
-        
+
+            $("#oeuvre").hide();
+            //document.getElementById("oeuvre").innerHTML = technique;
+            $("#question").hide();
 
             var nom = document.getElementById("nom").value;
 
             if (nom == "") {
                 alert("Vous devez rentrer votre prénom pour que la formule fonctionne ;)");
                 location.reload(); 
-            } else {
+            } else { 
 
             var number = Math.floor(Math.random() * (100 - 80 + 1) ) + 80;
             var percent = document.createElement("P");                       // Create a <p> element
             var name = document.createTextNode(nom+", vous et votre oeuvre êtes compatibles à : "+number+"%");      // Create a text node
             percent.appendChild(name);                                          // Append the text to <p>
             document.getElementById("anounce").appendChild(percent); 
+
+            var link = document.createElement("A");  
+            link.setAttribute("class", "btn back");
+            link.setAttribute("href", "index.html");
+            var text_button = document.createTextNode("Recommencer");
+            link.appendChild(text_button);  
+            document.getElementById("anounce").appendChild(link);   
 
 
             var min = 0;
@@ -103,15 +113,15 @@ $("#oeuvre").one("click", function oeuvres() {
                 // Append <p> to <div> with id="myDIV" 
                 var im = document.createElement("IMG");  
                 im.setAttribute("src", url);
-                im.setAttribute("width", "70%");
+                im.setAttribute("width", "60%");
                 im.setAttribute("height", "auto");
                 im.setAttribute("alt", legende); 
                 document.getElementById("resultat").appendChild(im);                  // Create a <p> element     // Create a text node                                        // Append the text to <p>
                 //document.getElementById("resultat").appendChild(image); 
 
-                $("#oeuvre").hide();
-                //document.getElementById("oeuvre").innerHTML = technique;
-                $("#question").hide();
+
+
+
                 $("#anounce").show();
                 $("#resultat").show();
                 
