@@ -91,7 +91,7 @@ $("#oeuvre").one("click", function oeuvres() {
                 var url = "https://opendata.hauts-de-seine.fr/explore/dataset/archives-de-la-planete/files/"+image+"/300"
 
                 var para = document.createElement("P");                       // Create a <p> element
-                var t = document.createTextNode(legende+", "+date+", "+technique);      // Create a text node
+                var t = document.createTextNode(legende+", "+date+", "+technique+", "+operateur+", "+lieu+", "+continent);      // Create a text node
                 para.appendChild(t);                                          // Append the text to <p>
                 document.getElementById("resultat").appendChild(para);           // Append <p> to <div> with id="myDIV" 
                 // Append <p> to <div> with id="myDIV" 
